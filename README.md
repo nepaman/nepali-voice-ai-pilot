@@ -53,7 +53,7 @@ nepali-voice-ai/
 │
 
 ## Current Status
-🚧 **Pilot phase – active development**
+**Pilot phase – active development**
 
 Work has started on:
 - Project planning
