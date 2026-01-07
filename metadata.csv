@@ -1,0 +1,52 @@
+sentence_id,text_nepali,category,notes
+NP_000.wav,यो नेपाली भ्वाइस एआई परियोजनाको परीक्षण रेकर्डिङ हो।,Test,Common
+NP_001.wav,नमस्कार,Greetings,Common
+NP_002.wav,नमस्ते,Greetings,Common
+NP_003.wav,"नमस्ते, कस्तो छ?",Greetings,Common
+NP_004.wav,"नमस्कार, सबै ठीक छ?",Greetings,Common
+NP_005.wav,हेल्लो,Greetings,Common
+NP_006.wav,"हेल्लो, के छ खबर?",Greetings,Common
+NP_007.wav,के छ?,Greetings,Common
+NP_008.wav,के हुँदैछ?,Greetings,Common
+NP_009.wav,के खबर?,Greetings,Common
+NP_010.wav,सबै ठीक छ?,Greetings,Common
+NP_011.wav,शुभ प्रभात,Greetings,Time Based
+NP_012.wav,शुभ बिहानी,Greetings,Time Based
+NP_013.wav,शुभ दिन,Greetings,Time Based
+NP_014.wav,शुभ अपरान्ह,Greetings,Time Based
+NP_015.wav,शुभ साँझ,Greetings,Time Based
+NP_016.wav,शुभ रात्रि,Greetings,Time Based
+NP_017.wav,आजको दिन शुभ रहोस्,Greetings,Time Based
+NP_018.wav,शुभ बिहानी होस्,Greetings,Time Based
+NP_019.wav,रमाइलो साँझ,Greetings,Time Based
+NP_020.wav,आरामसँग सुत्नुहोस्,Greetings,Time Based
+NP_021.wav,के छ यार?,Daily Life,Informal
+NP_022.wav,कस्तो छ जिन्दगी?,Daily Life,Informal
+NP_023.wav,धेरै दिनपछि भेट भयो,Daily Life,Informal
+NP_024.wav,तिमी ठीक छौ?,Daily Life,Informal
+NP_025.wav,आज राम्रो देखिन्छौ,Daily Life,Informal
+NP_026.wav,सबै ठिकै छ नि?,Daily Life,Informal
+NP_027.wav,कस्तो चल्दैछ?,Daily Life,Informal
+NP_028.wav,मज्जाले छ?,Daily Life,Informal
+NP_029.wav,के गर्दैछौ?,Daily Life,Informal
+NP_030.wav,आज के प्लान छ?,Daily Life,Informal
+NP_031.wav,तपाईंलाई भेटेर खुशी लाग्यो,Polite,Respectful
+NP_032.wav,तपाईं कस्तो हुनुहुन्छ?,Polite,Respectful
+NP_033.wav,सबै कुरा राम्रो छ?,Polite,Respectful
+NP_034.wav,आशा छ तपाईं ठीक हुनुहुन्छ,Polite,Respectful
+NP_035.wav,स्वागत छ,Polite,Respectful
+NP_036.wav,यहाँ आउनुभएकोमा धन्यवाद,Polite,Respectful
+NP_037.wav,भेट भएर खुशी लाग्यो,Polite,Respectful
+NP_038.wav,तपाईंको दिन शुभ रहोस्,Polite,Respectful
+NP_039.wav,कृपया बस्नुहोस्,Polite,Respectful
+NP_040.wav,आरामसँग आउनुहोस्,Polite,Respectful
+NP_041.wav,"ल, के छ त?",Daily Life,Common
+NP_042.wav,हैन के छ खबर?,Daily Life,Common
+NP_043.wav,आज त राम्रो मौसम छ है,Daily Life,Common
+NP_044.wav,धेरै समयपछि हो,Daily Life,Common
+NP_045.wav,तिमी यहाँ?,Daily Life,Common
+NP_046.wav,सबै ठीकठाक छ?,Daily Life,Common
+NP_047.wav,आज कस्तो दिन छ?,Daily Life,Common
+NP_048.wav,के नयाँ छ?,Daily Life,Common
+NP_049.wav,मज्जाले बित्दैछ?,Daily Life,Common
+NP_050.wav,"ल, भेट भयो नि!",Daily Life,Common
