@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Audio files (too large for Git)
+*.wav
+*.mp3
+*.flac
+*.m4a
+data/audio/raw/
+data/audio/processed/
+
+# Models (too large for Git)
+models/*.pt
+models/*.pth
+models/*.ckpt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
