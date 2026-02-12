@@ -239,6 +239,30 @@ Processing: test_02.mp3
 
 [Continue for all tests...]
 
+### Baseline Nepali STT – Whisper tests (51 sentences, single speaker)
+
+**Data**
+- 51 short daily-conversation sentences
+- 16 kHz mono, single speaker, clean microphone
+- Transcripts: Nepali (Devanagari) + Romanized
+
+**Models tested**
+- Whisper `medium`
+- Whisper `small`
+
+**Results (character-level / custom WER metric)**
+
+| Model   | Avg. accuracy | Best case          | Notes                                  |
+|---------|---------------|--------------------|----------------------------------------|
+| medium  | ~2.1%         | ~33.3%             | Often phonetically close but noisy     |
+| small   | ~6.3%         | 100% (e.g. नमस्कार) | Some short phrases perfect, others bad |
+
+- Many outputs are **phonetically similar** to Nepali but with wrong spelling and noisy characters.
+- Certain greetings like “नमस्कार”, “नमस्ते” are recognized perfectly.
+- Longer or less common phrases often degrade badly, sometimes with repeated syllables.
+- This confirms the core problem: **out-of-the-box Whisper struggles with conversational Nepali**, and we need adaptation / fine‑tuning.
+
+
 ## Overall Observations
 
 **What worked well:**
@@ -343,7 +367,7 @@ In your learning log, note:
 
 ---
 
-## Celebrate! 🎉
+## Celebrate! 
 
 You just:
 - Ran your first AI model
