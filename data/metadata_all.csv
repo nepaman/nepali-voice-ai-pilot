@@ -1,0 +1,152 @@
+filename,transcript,romanized
+NP_000.wav,यो नेपाली भ्वाइस एआई परियोजनाको परीक्षण रेकर्डिङ हो।,Yō nēpālī bhvā'isa ē'ā'ī pariyōjanākō parīkṣaṇa rēkarḍiṅa hō.
+NP_001.wav,नमस्कार,Namaskar
+NP_002.wav,नमस्ते,Namaste
+NP_003.wav,नमस्ते कस्तो छ?,Namaste Kasto Cha
+NP_004.wav,नमस्कार सबै ठीक छ?,Namskar Sabaie Thik Cha
+NP_005.wav,हेल्लो,Hello
+NP_006.wav,हेल्लो के छ खबर?,Hello Ke cha khabar
+NP_007.wav,के छ?,Ke Cha
+NP_008.wav,के हुँदैछ?,Ke hundai cha
+NP_009.wav,के खबर?,Ke khabar
+NP_010.wav,सबै ठीक छ?,sabaie thik cha
+NP_011.wav,शुभ प्रभात,subha prabhat
+NP_012.wav,शुभ बिहानी,subha bihani
+NP_013.wav,शुभ दिन,subha din
+NP_014.wav,शुभ अपरान्ह,subha aparaahn
+NP_015.wav,शुभ साँझ,subha sanjh
+NP_016.wav,शुभ रात्रि,subha ratri
+NP_017.wav,आजको दिन शुभ रहोस्,aja ko din sbuha rahos
+NP_018.wav,शुभ बिहानी होस्,subha bihani hos
+NP_019.wav,रमाइलो साँझ,ramailo sanjh
+NP_020.wav,आरामसँग सुत्नुहोस्,aramsanga sutnuhos
+NP_021.wav,के छ यार?,ke cha yaar
+NP_022.wav,कस्तो छ जिन्दगी?,kasto cha jindagi
+NP_023.wav,धेरै दिनपछि भेट भयो,dherai din pachi bhet bhayo
+NP_024.wav,तिमी ठीक छौ?,timi thik chau
+NP_025.wav,आज राम्रो देखिन्छौ,aja ramro dekhinchhau
+NP_026.wav,सबै ठिकै छ नि?,sabai thikai cha ni
+NP_027.wav,कस्तो चल्दैछ?,kaso chaldai cha
+NP_028.wav,मज्जाले छ?,mazza lae cha
+NP_029.wav,के गर्दैछौ?,ke gardai chau
+NP_030.wav,आज के प्लान छ?,aja ke plan cha
+NP_031.wav,तपाईंलाई भेटेर खुशी लाग्यो,tapailaie bhetera khusi lagyo
+NP_032.wav,तपाईं कस्तो हुनुहुन्छ?,tapai kasto hunhuncha
+NP_033.wav,सबै कुरा राम्रो छ?,sabaie kura thik cha
+NP_034.wav,आशा छ तपाईं ठीक हुनुहुन्छ,asha cha tapaie thik hunuhuncha
+NP_035.wav,स्वागत छ,swagat cha
+NP_036.wav,यहाँ आउनुभएकोमा धन्यवाद,yehan aunu bhayeko ma dhanyabad
+NP_037.wav,भेट भएर खुशी लाग्यो,bhe bhayera khusi lagyo
+NP_038.wav,तपाईंको दिन शुभ रहोस्,tamaiko din subha rahos
+NP_039.wav,कृपया बस्नुहोस्,kripaya basnuhos
+NP_040.wav,आरामसँग आउनुहोस्,aramasanga aunuhos
+NP_041.wav,ल के छ त?,la ke cha ta
+NP_042.wav,हैन के छ खबर?,haina ke cha khabar
+NP_043.wav,आज त राम्रो मौसम छ है,aja ta ramro mausam cha hai
+NP_044.wav,धेरै समयपछि हो,dherai samaya pachi ho
+NP_045.wav,तिमी यहाँ?,timi yenha
+NP_046.wav,सबै ठीकठाक छ?,sabai thikthak cha
+NP_047.wav,आज कस्तो दिन छ?,aja kasto din cha
+NP_048.wav,के नयाँ छ?,ke naya cha
+NP_049.wav,मज्जाले बित्दैछ?,mazzalae bidtaicha
+NP_050.wav,ल भेट भयो नि!,la bhet bhayo ni
+NP_051.wav,आज तपाईंको दिन कस्तो भयो?,Aja tapaaiko din kasto bhayo?
+NP_052.wav,आज बिहान कति बजे उठ्नुभयो?,Aja bihaan kati baje uthnubhayou?
+NP_053.wav,आज काममा व्यस्त हुनु भयो?,Aja kaam ma byasta hunu bhayo?
+NP_054.wav,आज दिनभर के गर्नुभयो?,Aja dinbhar ke garnubhayou?
+NP_055.wav,आज ट्राफिक धेरै थियो नि.,Aja traffic dherai thiyo ni.
+NP_056.wav,अहिले तपाईं कहाँ हुनुहुन्छ?,Ahile tapaaein kahaa hunuhunchha?
+NP_057.wav,तपाईं काठमाडौंमा बस्नुहुन्छ?,Tapaaein Kathmandu ma basnuhunchha?
+NP_058.wav,तपाईं अहिले के काम गर्नुहुन्छ?,Tapaaein ahile ke kaam garnuhunchha?
+NP_059.wav,आज मौसम निकै राम्रो छ.,Aja mausam nikai ramro chha.
+NP_060.wav,बाहिर पानी परिराखेको छ.,Baahira paani parirahekeko chha.
+NP_061.wav,हामी पछि हिंड्न जाने हो?,Haami pachhi hindna jaane ho?
+NP_062.wav,आज बेलुकी भेटेर कुरा गरौँला.,Aja beluki bhetera kura garaula.
+NP_063.wav,भोलि बिहान चिया खाने प्लान छ.,Bholi bihaan chiya khaane plan chha.
+NP_064.wav,तपाईंलाई कस्तो खाना मन पर्छ?,Tapaaeinlai kasto khaana man parchha?
+NP_065.wav,मलाई दाल भात धेरै मन पर्छ.,Malai daal bhaat dherai man parchha.
+NP_066.wav,आज तपाईंले खाना खाइसक्नुभयो?,Aja tapaaeinle khaana khaisaknubhayou?
+NP_067.wav,तपाईंलाई तातो चिया मन पर्छ कि कफी?,Tapaaeinlai taato chiya man parchha ki coffee?
+NP_068.wav,आज बजार जानुभएको थियो?,Aja bazaar jaanubhayo thiyo?
+NP_069.wav,आज कतिबेला office बाट फर्कनुभयो?,Aja kati bela office baat farknubhayou?
+NP_070.wav,आज धेरै थकाइ लाग्यो कि ठिकै छ?,Aja dherai thakaai laagyo ki thikai chha?
+NP_071.wav,तपाईं आज घरमै काम गर्नुभयो?,Tapaaein aja gharmai kaam garnubhayou?
+NP_072.wav,इंटरनेट अहिले राम्रो चलिरहेको छ?,Internet ahile ramro chalirahaeko chha?
+NP_073.wav,आज मीटिङ कति बजे सकियो?,Aja meeting kati baje sakiyo?
+NP_074.wav,आज दिनभर कम्प्युटर अगाडि बस्नुपर्‍यो.,Aja dinbhar computer agadi basnu paryo.
+NP_075.wav,आँखा अलि थाक्यो जस्तो भयो.,Aankha ali thakyo jasto bhayo.
+NP_076.wav,आज अलि आराम गर्न पाए राम्रो हुन्थ्यो.,Aja ali aaraam garn paae ramro hunthyo.
+NP_077.wav,भोलि छुट्टी छ कि काम छ?,Bholi chutti chha ki kaam chha?
+NP_078.wav,तपाईंले भोलिको लागि के प्लान गर्नु भएको छ?,Tapaaeinle bholiko lagi ke plan garnu bhayeko chha?
+NP_079.wav,आज नयाँ कुरा सिक्नुभयो?,Aja naya kura siknubhayou?
+NP_080.wav,आज दिन कस्तो बित्यो नि?,Aja din kasto bityo ni?
+NP_081.wav,तपाईंलाई नेपाली बोल्दा कति सजिलो लाग्छ?,Tapaaeinlai Nepali bolda kati sajilo laagchha?
+NP_082.wav,तपाईंले घरमा प्रायः नेपालीमै कुरा गर्नुहुन्छ?,Tapaaeinle gharma prayah Nepali mai kura garnuhunchha?
+NP_083.wav,तपाईं विदेशबाट नेपाल कति पटक आउनु हुन्छ?,Tapaaein bideshbaat Nepal kati patak aaunu hunchha?
+NP_084.wav,तपाईं अहिले कुन देशमा बस्नुहुन्छ?,Tapaaein ahile kun desh ma basnuhunchha?
+NP_085.wav,परिवारसँग कुरा गर्दा कस्तो फिल हुन्छ?,Parivaar sanga kura garda kasto feel hunchha?
+NP_086.wav,तपाईंले आज कसैलाई फोन गर्नुभएको छ?,Tapaaeinle aja kasailai phone garnu bhayeko chha?
+NP_087.wav,आज कुनै रोचक समाचार सुन्नुभयो?,Aja kunai rochak samachar sunnubhayou?
+NP_088.wav,अहिले इन्टरनेटको स्पीड कस्तो छ?,Ahile internet ko speed kasto chha?
+NP_089.wav,तपाईंले आज exercise गर्नुभयो?,Tapaaeinle aja exercise garnubhayou?
+NP_090.wav,स्वास्थ्य कस्तो छ अहिले?,Swasthya kasto chha ahile?
+NP_091.wav,अहिले निद्रा ठिक लागेको छ?,Ahile nidra thik laageko chha?
+NP_092.wav,काम र जीवनको balance कस्तो छ?,Kaam ra jivan ko balance kasto chha?
+NP_093.wav,आज केक, मिठाई वा खास खानेकुरा खाउनुभयो?,Aja cake, mithai wa khaas khanekura khaunubhayou?
+NP_094.wav,आज परिवारसँग कति समय बिताउनुभयो?,Aja parivaar sanga kati samaya bitaaunubhayou?
+NP_095.wav,आज दिनमा सबैभन्दा राम्रो क्षण कुन थियो?,Aja dinma sabbhandaa ramro kshan kun thiyo?
+NP_096.wav,आज दिनमा सबैभन्दा गाह्रो क्षण कुन थियो?,Aja dinma sabbhandaa gahro kshan kun thiyo?
+NP_097.wav,आज तपाईँलाई कसैले सहयोग गरेको अनुभव भयो?,Aja tapaaeinlai kasailai sahayog gareko anubhav bhayo?
+NP_098.wav,तपाईंले आज अरूलाई के सहयोग गर्नुभयो?,Tapaaeinle aja arulai ke sahayog garnubhayou?
+NP_099.wav,आज आफ्नो लक्ष्यतिर कति नजिक पुगेको महसुस भयो?,Aja aafno lakshya tira kati najik pugeko mahsoos bhayo?
+NP_100.wav,भोलि बिहान उठ्दा आफूलाई के भन्न चाहनुहुन्छ?,Bholi bihaan uthda aafulai ke bhanna chahanuhunchha?
+NP_101.wav,एक,ek
+NP_102.wav,दुई,dui
+NP_103.wav,तीन,tiin
+NP_104.wav,चार,chaar
+NP_105.wav,पाँच,paanch
+NP_106.wav,दश,dash
+NP_107.wav,बीस,bees
+NP_108.wav,पचास,pachaas
+NP_109.wav,सय,saya
+NP_110.wav,हजार,hazaar
+NP_111.wav,आईतबार,Aaitabar
+NP_112.wav,सोमबार,Somabar
+NP_113.wav,बुधबार,Budhabar
+NP_114.wav,शुक्रबार,Shukrabar
+NP_115.wav,शनिबार,Shanibar
+NP_116.wav,जनवरी,January
+NP_117.wav,फेब्रुअरी,February
+NP_118.wav,मार्च,March
+NP_119.wav,अप्रिल,April
+NP_120.wav,डिसेम्बर,December
+NP_121.wav,बुबा,bubaa
+NP_122.wav,आमा,aamaa
+NP_123.wav,दिदी,didi
+NP_124.wav,दाइ,daai
+NP_125.wav,भाइ,bhai
+NP_126.wav,बहिनी,bahini
+NP_127.wav,घर,ghar
+NP_128.wav,स्कूल,school
+NP_129.wav,अस्पताल,aspataal
+NP_130.wav,कार्यालय,kaaryalaya
+NP_131.wav,बस,bus
+NP_132.wav,ट्याक्सी,taxi
+NP_133.wav,विमान,bimaan
+NP_134.wav,काठमाडौँ,Kathmandu
+NP_135.wav,ललितपुर,Lalitpur
+NP_136.wav,पोखरा,Pokhara
+NP_137.wav,नमस्कार,namaskaar
+NP_138.wav,धन्यवाद,dhanyabaad
+NP_139.wav,कृपया,kripayaa
+NP_140.wav,ठिक छ,thik chha
+NP_141.wav,सन्चै छु,sanchai chhu
+NP_142.wav,भोक लाग्यो,bhok laagyo
+NP_143.wav,तिरसना लागेको,tiresanaa laageko
+NP_144.wav,थकाइ लाग्यो,thakaai laagyo
+NP_145.wav,सुत्न मन लागेको,sutna man laageko
+NP_146.wav,खुसी छु,khusi chhu
+NP_147.wav,दुःखी छु,dukkhi chhu
+NP_148.wav,जाने बेला भयो,jane bela bhayo
+NP_149.wav,फेरि भेटौँला,pheri bhetaunla
+NP_150.wav,शुभरात्रि,shubha raatri

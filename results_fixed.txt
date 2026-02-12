@@ -1,0 +1,767 @@
+Loaded 151 entries from metadata_all.csv
+
+Loading Whisper 'small' model...
+✓ Model loaded
+
+[1/151] NP_000.wav
+  Ground Truth: यो नेपाली भ्वाइस एआई परियोजनाको परीक्षण रेकर्डिङ हो।
+  Whisper Said: यो नेपली बोस एः आई परी योजना को परच्छन्डखडिंग हो
+  Accuracy: 21.2%
+
+[2/151] NP_001.wav
+  Ground Truth: नमस्कार
+  Whisper Said: नमस्कार
+  Accuracy: 100.0%
+
+[3/151] NP_002.wav
+  Ground Truth: नमस्ते
+  Whisper Said: नमस्ते
+  Accuracy: 100.0%
+
+[4/151] NP_003.wav
+  Ground Truth: नमस्ते कस्तो छ?
+  Whisper Said: नास्ते कोस्तु साद
+  Accuracy: 46.7%
+
+[5/151] NP_004.wav
+  Ground Truth: नमस्कार सबै ठीक छ?
+  Whisper Said: नमस्कार सवे टिएक सा
+  Accuracy: 55.6%
+
+[6/151] NP_005.wav
+  Ground Truth: हेल्लो
+  Whisper Said: अलो
+  Accuracy: 0.0%
+
+[7/151] NP_006.wav
+  Ground Truth: हेल्लो के छ खबर?
+  Whisper Said: आलो, किट्सगवर
+  Accuracy: 0.0%
+
+[8/151] NP_007.wav
+  Ground Truth: के छ?
+  Whisper Said: तेजा
+  Accuracy: 20.0%
+
+[9/151] NP_008.wav
+  Ground Truth: के हुँदैछ?
+  Whisper Said: विए बदेसा
+  Accuracy: 0.0%
+
+[10/151] NP_009.wav
+  Ground Truth: के खबर?
+  Whisper Said: अप्रभात
+  Accuracy: 0.0%
+
+[11/151] NP_010.wav
+  Ground Truth: सबै ठीक छ?
+  Whisper Said: तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो �
+  Accuracy: 0.0%
+
+[12/151] NP_011.wav
+  Ground Truth: शुभ प्रभात
+  Whisper Said: शुभ प्रभात
+  Accuracy: 100.0%
+
+[13/151] NP_012.wav
+  Ground Truth: शुभ बिहानी
+  Whisper Said: तुब बिहानी
+  Accuracy: 80.0%
+
+[14/151] NP_013.wav
+  Ground Truth: शुभ दिन
+  Whisper Said: शुभ तिन
+  Accuracy: 85.7%
+
+[15/151] NP_014.wav
+  Ground Truth: शुभ अपरान्ह
+  Whisper Said: शुभ अप्राना
+  Accuracy: 54.5%
+
+[16/151] NP_015.wav
+  Ground Truth: शुभ साँझ
+  Whisper Said: शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ �
+  Accuracy: 50.0%
+
+[17/151] NP_016.wav
+  Ground Truth: शुभ रात्रि
+  Whisper Said: शुभ राद्री
+  Accuracy: 80.0%
+
+[18/151] NP_017.wav
+  Ground Truth: आजको दिन शुभ रहोस्
+  Whisper Said: आज़गदिन सुगरा।
+  Accuracy: 11.1%
+
+[19/151] NP_018.wav
+  Ground Truth: शुभ बिहानी होस्
+  Whisper Said: शुभ बिहानी हो
+  Accuracy: 86.7%
+
+[20/151] NP_019.wav
+  Ground Truth: रमाइलो साँझ
+  Whisper Said: ब्रमाई लुसाश
+  Accuracy: 9.1%
+
+[21/151] NP_020.wav
+  Ground Truth: आरामसँग सुत्नुहोस्
+  Whisper Said: रामस्कार शुभ नूए
+  Accuracy: 0.0%
+
+[22/151] NP_021.wav
+  Ground Truth: के छ यार?
+  Whisper Said: प्रभात बिहानी प्रभात बिहानी प्रभात बिहानी प्रभात बिहानी प्रभात बिहानी प्रभात बिहानी प्रभात बिहानी प्रभात बिहानी प्रभात बिहानी प्रभात बिहानी प्रभात बिहानी प्रभात बिहानी प्रभात बिहानी प्रभात बिहानी प्रभात बिहा
+  Accuracy: 0.0%
+
+[23/151] NP_022.wav
+  Ground Truth: कस्तो छ जिन्दगी?
+  Whisper Said: पास्व्सव्सदिन दिन देखी
+  Accuracy: 0.0%
+
+[24/151] NP_023.wav
+  Ground Truth: धेरै दिनपछि भेट भयो
+  Whisper Said: तेरे तिन पची बेट वोयो
+  Accuracy: 31.6%
+
+[25/151] NP_024.wav
+  Ground Truth: तिमी ठीक छौ?
+  Whisper Said: जी में तिख्स अपने
+  Accuracy: 0.0%
+
+[26/151] NP_025.wav
+  Ground Truth: आज राम्रो देखिन्छौ
+  Whisper Said: आजराम ब्रोदिकिंट्टु
+  Accuracy: 22.2%
+
+[27/151] NP_026.wav
+  Ground Truth: सबै ठिकै छ नि?
+  Whisper Said: तब इत्टिक यानी
+  Accuracy: 7.1%
+
+[28/151] NP_027.wav
+  Ground Truth: कस्तो चल्दैछ?
+  Whisper Said: प्रभात शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शु�
+  Accuracy: 0.0%
+
+[29/151] NP_028.wav
+  Ground Truth: मज्जाले छ?
+  Whisper Said: मत्जा देजा
+  Accuracy: 40.0%
+
+[30/151] NP_029.wav
+  Ground Truth: के गर्दैछौ?
+  Whisper Said: विगोते सुब
+  Accuracy: 0.0%
+
+[31/151] NP_030.wav
+  Ground Truth: आज के प्लान छ?
+  Whisper Said: आज़े की प्लान्चा
+  Accuracy: 14.3%
+
+[32/151] NP_031.wav
+  Ground Truth: तपाईंलाई भेटेर खुशी लाग्यो
+  Whisper Said: तबानले बिटर खुसी लागें
+  Accuracy: 7.7%
+
+[33/151] NP_032.wav
+  Ground Truth: तपाईं कस्तो हुनुहुन्छ?
+  Whisper Said: तब प्रभात नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा नाजा �
+  Accuracy: 4.5%
+
+[34/151] NP_033.wav
+  Ground Truth: सबै कुरा राम्रो छ?
+  Whisper Said: तबे कुर्या रान्द्र साव
+  Accuracy: 27.8%
+
+[35/151] NP_034.wav
+  Ground Truth: आशा छ तपाईं ठीक हुनुहुन्छ
+  Whisper Said: आजा चा तब लेग तेक नुन्चा
+  Accuracy: 20.0%
+
+[36/151] NP_035.wav
+  Ground Truth: स्वागत छ
+  Whisper Said: बागत से
+  Accuracy: 0.0%
+
+[37/151] NP_036.wav
+  Ground Truth: यहाँ आउनुभएकोमा धन्यवाद
+  Whisper Said: यह उनु बाइकमा नने बाग
+  Accuracy: 8.7%
+
+[38/151] NP_037.wav
+  Ground Truth: भेट भएर खुशी लाग्यो
+  Whisper Said: बेग बाईरा खुसी लागे
+  Accuracy: 10.5%
+
+[39/151] NP_038.wav
+  Ground Truth: तपाईंको दिन शुभ रहोस्
+  Whisper Said: अपागो तीन सुभर हो
+  Accuracy: 9.5%
+
+[40/151] NP_039.wav
+  Ground Truth: कृपया बस्नुहोस्
+  Whisper Said: प्रभाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबाबा
+  Accuracy: 6.7%
+
+[41/151] NP_040.wav
+  Ground Truth: आरामसँग आउनुहोस्
+  Whisper Said: आराम संआउन रोस
+  Accuracy: 25.0%
+
+[42/151] NP_041.wav
+  Ground Truth: ल के छ त?
+  Whisper Said: ला के चाता
+  Accuracy: 11.1%
+
+[43/151] NP_042.wav
+  Ground Truth: हैन के छ खबर?
+  Whisper Said: आईना के चागावा
+  Accuracy: 7.7%
+
+[44/151] NP_043.wav
+  Ground Truth: आज त राम्रो मौसम छ है
+  Whisper Said: आज़े तरम्रमोसंचाई
+  Accuracy: 28.6%
+
+[45/151] NP_044.wav
+  Ground Truth: धेरै समयपछि हो
+  Whisper Said: तेरे समे पषीव
+  Accuracy: 35.7%
+
+[46/151] NP_045.wav
+  Ground Truth: तिमी यहाँ?
+  Whisper Said: भी मी आँप
+  Accuracy: 0.0%
+
+[47/151] NP_046.wav
+  Ground Truth: सबै ठीकठाक छ?
+  Whisper Said: तब आज़ तिटाषा
+  Accuracy: 7.7%
+
+[48/151] NP_047.wav
+  Ground Truth: आज कस्तो दिन छ?
+  Whisper Said: आजा खोस्त्त्दिंजा
+  Accuracy: 13.3%
+
+[49/151] NP_048.wav
+  Ground Truth: के नयाँ छ?
+  Whisper Said: विज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्टाविज्�
+  Accuracy: 10.0%
+
+[50/151] NP_049.wav
+  Ground Truth: मज्जाले बित्दैछ?
+  Whisper Said: मजाली पित्तेस्या
+  Accuracy: 18.8%
+
+[51/151] NP_050.wav
+  Ground Truth: ल भेट भयो नि!
+  Whisper Said: ला बिर बायनी
+  Accuracy: 15.4%
+
+[52/151] NP_051.wav
+  Ground Truth: आज तपाईंको दिन कस्तो भयो?
+  Whisper Said: आजर तपेको दिन कोस्तु बहुर
+  Accuracy: 24.0%
+
+[53/151] NP_052.wav
+  Ground Truth: आज बिहान कति बजे उठ्नुभयो?
+  Whisper Said: आज़ बिहाना कती बजे वट्वायो
+  Accuracy: 7.7%
+
+[54/151] NP_053.wav
+  Ground Truth: आज काममा व्यस्त हुनु भयो?
+  Whisper Said: आजा कामा पेस्तवून बायो
+  Accuracy: 20.0%
+
+[55/151] NP_054.wav
+  Ground Truth: आज दिनभर के गर्नुभयो?
+  Whisper Said: आजा दिन बर की कोनुवाय।
+  Accuracy: 9.5%
+
+[56/151] NP_055.wav
+  Ground Truth: आज ट्राफिक धेरै थियो नि.
+  Whisper Said: आजा प्रापिक देरी त्यूनी
+  Accuracy: 12.5%
+
+[57/151] NP_056.wav
+  Ground Truth: अहिले तपाईं कहाँ हुनुहुन्छ?
+  Whisper Said: अएली तपें कहा उनुन्से
+  Accuracy: 3.7%
+
+[58/151] NP_057.wav
+  Ground Truth: तपाईं काठमाडौंमा बस्नुहुन्छ?
+  Whisper Said: तब एक खाफरंदुमा बस्नूंचा
+  Accuracy: 10.7%
+
+[59/151] NP_058.wav
+  Ground Truth: तपाईं अहिले के काम गर्नुहुन्छ?
+  Whisper Said: तपने आईली की काम गरनुन से
+  Accuracy: 6.7%
+
+[60/151] NP_059.wav
+  Ground Truth: आज मौसम निकै राम्रो छ.
+  Whisper Said: आजा मुस्म निकेराम रुस
+  Accuracy: 9.1%
+
+[61/151] NP_060.wav
+  Ground Truth: बाहिर पानी परिराखेको छ.
+  Whisper Said: बाईर पानी परी राके को चाए
+  Accuracy: 21.7%
+
+[62/151] NP_061.wav
+  Ground Truth: हामी पछि हिंड्न जाने हो?
+  Whisper Said: अमी पची हीन जाने हो
+  Accuracy: 4.2%
+
+[63/151] NP_062.wav
+  Ground Truth: आज बेलुकी भेटेर कुरा गरौँला.
+  Whisper Said: आजा बेलू की बेटेर कुरे गर मूना
+  Accuracy: 10.7%
+
+[64/151] NP_063.wav
+  Ground Truth: भोलि बिहान चिया खाने प्लान छ.
+  Whisper Said: बूली बिहाना च्या कानी प्लायंचा
+  Accuracy: 24.1%
+
+[65/151] NP_064.wav
+  Ground Truth: तपाईंलाई कस्तो खाना मन पर्छ?
+  Whisper Said: अपाले कोस्तो खाना मुन्पर्षे
+  Accuracy: 10.7%
+
+[66/151] NP_065.wav
+  Ground Truth: मलाई दाल भात धेरै मन पर्छ.
+  Whisper Said: मालाज्दाल बात देरी मन्पर्सशा
+  Accuracy: 3.8%
+
+[67/151] NP_066.wav
+  Ground Truth: आज तपाईंले खाना खाइसक्नुभयो?
+  Whisper Said: आजा तपहले खाना कही सकनो बआयो
+  Accuracy: 14.3%
+
+[68/151] NP_067.wav
+  Ground Truth: तपाईंलाई तातो चिया मन पर्छ कि कफी?
+  Whisper Said: पर आप आप आप आप आप ता तुछी आम न परचा की को फिल
+  Accuracy: 2.9%
+
+[69/151] NP_068.wav
+  Ground Truth: आज बजार जानुभएको थियो?
+  Whisper Said: आज़ बजा जानो बाए को थी।
+  Accuracy: 31.8%
+
+[70/151] NP_069.wav
+  Ground Truth: आज कतिबेला office बाट फर्कनुभयो?
+  Whisper Said: आजा खोतिब ला अफीष पार्टा फर्प्र कुनुवोयो
+  Accuracy: 12.5%
+
+[71/151] NP_070.wav
+  Ground Truth: आज धेरै थकाइ लाग्यो कि ठिकै छ?
+  Whisper Said: आजा देरे ताका लागे उकी? तेके चा
+  Accuracy: 13.3%
+
+[72/151] NP_071.wav
+  Ground Truth: तपाईं आज घरमै काम गर्नुभयो?
+  Whisper Said: तबे आजा गर्मी काम गरनो बायो
+  Accuracy: 33.3%
+
+[73/151] NP_072.wav
+  Ground Truth: इंटरनेट अहिले राम्रो चलिरहेको छ?
+  Whisper Said: इंटेरेन आईले राम्ब्र चारी रहेको सा
+  Accuracy: 21.9%
+
+[74/151] NP_073.wav
+  Ground Truth: आज मीटिङ कति बजे सकियो?
+  Whisper Said: आजा मिटिं कोती बजे सोगी
+  Accuracy: 8.7%
+
+[75/151] NP_074.wav
+  Ground Truth: आज दिनभर कम्प्युटर अगाडि बस्नुपर्‍यो.
+  Whisper Said: आजा दिन बर कुमपिटर अगर दिब वसनु परे
+  Accuracy: 21.6%
+
+[76/151] NP_075.wav
+  Ground Truth: आँखा अलि थाक्यो जस्तो भयो.
+  Whisper Said: आखा अली ताक्यो जस्तो बाय।
+  Accuracy: 7.7%
+
+[77/151] NP_076.wav
+  Ground Truth: आज अलि आराम गर्न पाए राम्रो हुन्थ्यो.
+  Whisper Said: आजा अली आराम गणो पाये राम रोंतिव
+  Accuracy: 13.5%
+
+[78/151] NP_077.wav
+  Ground Truth: भोलि छुट्टी छ कि काम छ?
+  Whisper Said: बूली चुटी चारकि काम चाँ?
+  Accuracy: 17.4%
+
+[79/151] NP_078.wav
+  Ground Truth: तपाईंले भोलिको लागि के प्लान गर्नु भएको छ?
+  Whisper Said: तपापाई लिए बूली को लागी कि प्लान गोनो बाए को सर
+  Accuracy: 7.1%
+
+[80/151] NP_079.wav
+  Ground Truth: आज नयाँ कुरा सिक्नुभयो?
+  Whisper Said: अजा नहीं कुरा सिक्नु बईो
+  Accuracy: 4.3%
+
+[81/151] NP_080.wav
+  Ground Truth: आज दिन कस्तो बित्यो नि?
+  Whisper Said: आजा दिन कोस्त बिट्यूनी
+  Accuracy: 13.0%
+
+[82/151] NP_081.wav
+  Ground Truth: तपाईंलाई नेपाली बोल्दा कति सजिलो लाग्छ?
+  Whisper Said: पापेला इन्ये पारी बुल्डा को ती साजी लोलाक से
+  Accuracy: 0.0%
+
+[83/151] NP_082.wav
+  Ground Truth: तपाईंले घरमा प्रायः नेपालीमै कुरा गर्नुहुन्छ?
+  Whisper Said: तपहले गवर माप्राई नेपादी मैं कुरा गरनुन सा
+  Accuracy: 26.7%
+
+[84/151] NP_083.wav
+  Ground Truth: तपाईं विदेशबाट नेपाल कति पटक आउनु हुन्छ?
+  Whisper Said: तपाई भितेश पातर नेपाल कोती पाता काण नुन्चा
+  Accuracy: 15.0%
+
+[85/151] NP_084.wav
+  Ground Truth: तपाईं अहिले कुन देशमा बस्नुहुन्छ?
+  Whisper Said: ता पाई और लिकुन देस्मा बस्नुंषा
+  Accuracy: 21.2%
+
+[86/151] NP_085.wav
+  Ground Truth: परिवारसँग कुरा गर्दा कस्तो फिल हुन्छ?
+  Whisper Said: पर्रिवार सावो कुरा गर्दा कुस्तो फिल हूं से
+  Accuracy: 8.1%
+
+[87/151] NP_086.wav
+  Ground Truth: तपाईंले आज कसैलाई फोन गर्नुभएको छ?
+  Whisper Said: तपाईली आजा कोसालाई फों गणो बाए को सा
+  Accuracy: 17.6%
+
+[88/151] NP_087.wav
+  Ground Truth: आज कुनै रोचक समाचार सुन्नुभयो?
+  Whisper Said: आजा कुने रोजक समाचार सुन्नुवायो
+  Accuracy: 6.7%
+
+[89/151] NP_088.wav
+  Ground Truth: अहिले इन्टरनेटको स्पीड कस्तो छ?
+  Whisper Said: आईले अंटेनेट को स्पीट कोस्तो सर
+  Accuracy: 16.1%
+
+[90/151] NP_089.wav
+  Ground Truth: तपाईंले आज exercise गर्नुभयो?
+  Whisper Said: तपाईनी आजा एकसेष गरनुवायो
+  Accuracy: 17.2%
+
+[91/151] NP_090.wav
+  Ground Truth: स्वास्थ्य कस्तो छ अहिले?
+  Whisper Said: शुस्ति कुस्तो साईलि
+  Accuracy: 0.0%
+
+[92/151] NP_091.wav
+  Ground Truth: अहिले निद्रा ठिक लागेको छ?
+  Whisper Said: आईली निंद्रा तिक लाएको सा
+  Accuracy: 38.5%
+
+[93/151] NP_092.wav
+  Ground Truth: काम र जीवनको balance कस्तो छ?
+  Whisper Said: अप्रा जीवन्को बलेंस कोस्टुसर
+  Accuracy: 24.1%
+
+[94/151] NP_093.wav
+  Ground Truth: आज केक
+  Whisper Said: आज़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़़�
+  Accuracy: 33.3%
+
+[95/151] NP_094.wav
+  Ground Truth: आज परिवारसँग कति समय बिताउनुभयो?
+  Whisper Said: आज़़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभ
+  Accuracy: 12.5%
+
+[96/151] NP_095.wav
+  Ground Truth: आज दिनमा सबैभन्दा राम्रो क्षण कुन थियो?
+  Whisper Said: आजा दिन माड़ा
+  Accuracy: 5.1%
+
+[97/151] NP_096.wav
+  Ground Truth: आज दिनमा सबैभन्दा गाह्रो क्षण कुन थियो?
+  Whisper Said: अज़़ अज़़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद़ प्रभाद
+  Accuracy: 10.3%
+
+[98/151] NP_097.wav
+  Ground Truth: आज तपाईँलाई कसैले सहयोग गरेको अनुभव भयो?
+  Whisper Said: आप प्रभात शुभ बिहानी
+  Accuracy: 5.0%
+
+[99/151] NP_098.wav
+  Ground Truth: तपाईंले आज अरूलाई के सहयोग गर्नुभयो?
+  Whisper Said: अप प्रभात शुभ बिहानी
+  Accuracy: 2.8%
+
+[100/151] NP_099.wav
+  Ground Truth: आज आफ्नो लक्ष्यतिर कति नजिक पुगेको महसुस भयो?
+  Whisper Said: आद़वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्वाश्�
+  Accuracy: 2.2%
+
+[101/151] NP_100.wav
+  Ground Truth: भोलि बिहान उठ्दा आफूलाई के भन्न चाहनुहुन्छ?
+  Whisper Said: बूली ब्याना
+  Accuracy: 11.6%
+
+[102/151] NP_101.wav
+  Ground Truth: एक
+  Whisper Said: प्रभात शुभ बिहानी
+  Accuracy: 0.0%
+
+[103/151] NP_102.wav
+  Ground Truth: दुई
+  Whisper Said: तुई
+  Accuracy: 66.7%
+
+[104/151] NP_103.wav
+  Ground Truth: तीन
+  Whisper Said: बिन
+  Accuracy: 33.3%
+
+[105/151] NP_104.wav
+  Ground Truth: चार
+  Whisper Said: शाद
+  Accuracy: 33.3%
+
+[106/151] NP_105.wav
+  Ground Truth: पाँच
+  Whisper Said: बाँ
+  Accuracy: 50.0%
+
+[107/151] NP_106.wav
+  Ground Truth: दश
+  Whisper Said: तुस
+  Accuracy: 0.0%
+
+[108/151] NP_107.wav
+  Ground Truth: बीस
+  Whisper Said: बीस
+  Accuracy: 100.0%
+
+[109/151] NP_108.wav
+  Ground Truth: पचास
+  Whisper Said: बद्सास
+  Accuracy: 25.0%
+
+[110/151] NP_109.wav
+  Ground Truth: सय
+  Whisper Said: सवाए
+  Accuracy: 50.0%
+
+[111/151] NP_110.wav
+  Ground Truth: हजार
+  Whisper Said: बाजा
+  Accuracy: 0.0%
+
+[112/151] NP_111.wav
+  Ground Truth: आईतबार
+  Whisper Said: आइत बात
+  Accuracy: 33.3%
+
+[113/151] NP_112.wav
+  Ground Truth: सोमबार
+  Whisper Said: तोमबार
+  Accuracy: 83.3%
+
+[114/151] NP_113.wav
+  Ground Truth: बुधबार
+  Whisper Said: बूदबार
+  Accuracy: 66.7%
+
+[115/151] NP_114.wav
+  Ground Truth: शुक्रबार
+  Whisper Said: शुभ बार
+  Accuracy: 25.0%
+
+[116/151] NP_115.wav
+  Ground Truth: शनिबार
+  Whisper Said: सनी बार
+  Accuracy: 16.7%
+
+[117/151] NP_116.wav
+  Ground Truth: जनवरी
+  Whisper Said: जन्वरी
+  Accuracy: 40.0%
+
+[118/151] NP_117.wav
+  Ground Truth: फेब्रुअरी
+  Whisper Said: प्रभात बिहानी
+  Accuracy: 0.0%
+
+[119/151] NP_118.wav
+  Ground Truth: मार्च
+  Whisper Said: मार्द
+  Accuracy: 80.0%
+
+[120/151] NP_119.wav
+  Ground Truth: अप्रिल
+  Whisper Said: अप्रील
+  Accuracy: 83.3%
+
+[121/151] NP_120.wav
+  Ground Truth: डिसेम्बर
+  Whisper Said: विसेंबर
+  Accuracy: 37.5%
+
+[122/151] NP_121.wav
+  Ground Truth: बुबा
+  Whisper Said: बूबा
+  Accuracy: 75.0%
+
+[123/151] NP_122.wav
+  Ground Truth: आमा
+  Whisper Said: आमा
+  Accuracy: 100.0%
+
+[124/151] NP_123.wav
+  Ground Truth: दिदी
+  Whisper Said: दिदी
+  Accuracy: 100.0%
+
+[125/151] NP_124.wav
+  Ground Truth: दाइ
+  Whisper Said: ता इ
+  Accuracy: 33.3%
+
+[126/151] NP_125.wav
+  Ground Truth: भाइ
+  Whisper Said: प्रभात नाई
+  Accuracy: 0.0%
+
+[127/151] NP_126.wav
+  Ground Truth: बहिनी
+  Whisper Said: बहीनी
+  Accuracy: 80.0%
+
+[128/151] NP_127.wav
+  Ground Truth: घर
+  Whisper Said: बाड
+  Accuracy: 0.0%
+
+[129/151] NP_128.wav
+  Ground Truth: स्कूल
+  Whisper Said: शुभ बिहानी
+  Accuracy: 0.0%
+
+[130/151] NP_129.wav
+  Ground Truth: अस्पताल
+  Whisper Said: अस्पताल
+  Accuracy: 100.0%
+
+[131/151] NP_130.wav
+  Ground Truth: कार्यालय
+  Whisper Said: शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ शुभ �
+  Accuracy: 0.0%
+
+[132/151] NP_131.wav
+  Ground Truth: बस
+  Whisper Said: बास
+  Accuracy: 50.0%
+
+[133/151] NP_132.wav
+  Ground Truth: ट्याक्सी
+  Whisper Said: अप आप याख च्छी
+  Accuracy: 0.0%
+
+[134/151] NP_133.wav
+  Ground Truth: विमान
+  Whisper Said: बिमान
+  Accuracy: 80.0%
+
+[135/151] NP_134.wav
+  Ground Truth: काठमाडौँ
+  Whisper Said: अप प्रभात बिहानी
+  Accuracy: 0.0%
+
+[136/151] NP_135.wav
+  Ground Truth: ललितपुर
+  Whisper Said: लालेग पूड
+  Accuracy: 14.3%
+
+[137/151] NP_136.wav
+  Ground Truth: पोखरा
+  Whisper Said: प्करा
+  Accuracy: 60.0%
+
+[138/151] NP_137.wav
+  Ground Truth: नमस्कार
+  Whisper Said: नमस्कार
+  Accuracy: 100.0%
+
+[139/151] NP_138.wav
+  Ground Truth: धन्यवाद
+  Whisper Said: तन्नेबाद
+  Accuracy: 28.6%
+
+[140/151] NP_139.wav
+  Ground Truth: कृपया
+  Whisper Said: प्रभात बिहानी
+  Accuracy: 20.0%
+
+[141/151] NP_140.wav
+  Ground Truth: ठिक छ
+  Whisper Said: तिक्चा
+  Accuracy: 40.0%
+
+[142/151] NP_141.wav
+  Ground Truth: सन्चै छु
+  Whisper Said: अंजे चुए
+  Accuracy: 0.0%
+
+[143/151] NP_142.wav
+  Ground Truth: भोक लाग्यो
+  Whisper Said: बूक लाए।
+  Accuracy: 40.0%
+
+[144/151] NP_143.wav
+  Ground Truth: तिरसना लागेको
+  Whisper Said: तिर्षना लाये कूए
+  Accuracy: 23.1%
+
+[145/151] NP_144.wav
+  Ground Truth: थकाइ लाग्यो
+  Whisper Said: प्काई लाग।
+  Accuracy: 0.0%
+
+[146/151] NP_145.wav
+  Ground Truth: सुत्न मन लागेको
+  Whisper Said: सुट्नम वन लागे को
+  Accuracy: 26.7%
+
+[147/151] NP_146.wav
+  Ground Truth: खुसी छु
+  Whisper Said: कुसित।
+  Accuracy: 28.6%
+
+[148/151] NP_147.wav
+  Ground Truth: दुःखी छु
+  Whisper Said: तुकिचु
+  Accuracy: 12.5%
+
+[149/151] NP_148.wav
+  Ground Truth: जाने बेला भयो
+  Whisper Said: जानि बिला बोयो
+  Accuracy: 61.5%
+
+[150/151] NP_149.wav
+  Ground Truth: फेरि भेटौँला
+  Whisper Said: प्रभात बिहानी
+  Accuracy: 8.3%
+
+[151/151] NP_150.wav
+  Ground Truth: शुभरात्रि
+  Whisper Said: सुवरात्रे
+  Accuracy: 66.7%
+
+======================================================================
+SUMMARY
+======================================================================
+Overall       : 151 files, avg accuracy = 26.1%
+Original (000-050): 51 files, avg accuracy = 25.2%
+New (051-150)     : 100 files, avg accuracy = 26.5%
+
