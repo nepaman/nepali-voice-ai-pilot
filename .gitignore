@@ -9,10 +9,6 @@ env/
 ENV/
 
 # Audio files (too large for Git)
-*.wav
-*.mp3
-*.flac
-*.m4a
 data/audio/raw/
 data/audio/processed/
 
