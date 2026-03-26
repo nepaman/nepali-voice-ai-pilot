@@ -1,79 +1,152 @@
-# Nepali Voice AI – Pilot Project
+Nepali Voice AI — Pilot Project
+A personal pilot project building Speech-to-Text (STT) and Text-to-Speech (TTS) for everyday conversational Nepali — an underrepresented language in voice AI.
 
-## Overview
-Nepali Voice AI is a personal pilot project focused on building a basic **Speech-to-Text (STT)** and **Text-to-Speech (TTS)** system for everyday Nepali conversations.
+Overview
+Nepali Voice AI is a solo, non-commercial pilot focused on improving Nepali language representation in voice-based AI systems. Built with open-source tools and a learning-first approach, the goal is to create a foundation that can grow with community contributions.
 
-The goal of this project is to improve **Nepali language representation in voice-based AI systems**, using open-source tools and a realistic, learning-first approach.
+Project Goals
+Build a working Nepali Speech-to-Text (STT) prototype
+Build a natural Nepali Text-to-Speech (TTS) voice
+Focus on daily, conversational Nepali (not formal or literary)
+Learn and document the full AI development process
+Create a foundation that can scale with community contributions
 
-This is a **non-commercial pilot project**, developed by a single contributor, with long-term community impact in mind.
+Current Status — Phase 2 Complete
 
----
+Phase 1 — STT Baseline (Complete)
+Recorded 151 single-speaker audio clips (NP_001–NP_150)
+Built and tested Whisper STT baseline
+Created metadata CSVs and transcript files
+Established project structure and documentation
+Phase 2 — Voice Loop Demo (Complete)
+Built a full voice loop: Speak Nepali → Transcribe → Respond → Speak back
+Integrated Whisper small model for live Nepali transcription
+Recorded 6 personal voice responses (greeting, morning, thanks, goodnight, how are you, default)
+Built Gradio 6.x web demo (voice_loop_demo.py)
+Implemented phonetic keyword matching for Whisper's Nepali output variations
+Added hallucination detection for short/silent audio inputs
+Supported phrases (Phase 2 demo):
+Say
+Response
+नमस्ते / नमस्कार
+Greeting response
+शुभ प्रभात
+Good morning response
+धन्यवाद
+Thank you response
+शुभ रात्रि
+Good night response
+कस्तो छ
+How are you response
 
-## Project Goals
-- Build a working Nepali Speech-to-Text (STT) prototype
-- Build a natural Nepali Text-to-Speech (TTS) voice
-- Focus on daily, conversational Nepali (not formal or literary)
-- Learn and document the AI development process
-- Create a foundation that can scale with community contributions
 
----
+Running the Demo
+Requirements
+pip install gradio openai-whisper gtts
 
-## Scope (Pilot Phase)
-### Included
-- Single-speaker voice dataset
-- Basic STT and TTS models
-- Simple demo (local or web-based)
+Run
+cd scripts/Demo
+python voice_loop_demo.py
 
-### Not Included
-- Commercial deployment
-- Mobile applications
-- Multi-speaker or multi-accent support (for now)
+Open http://127.0.0.1:7860 in your browser.
+Click the microphone button
+Speak in Nepali
+Stop recording — response plays automatically in your voice
 
----
-
-## Planned Technologies
-- **Programming Language:** Python
-- **Speech-to-Text:** Whisper / wav2vec2 (open-source)
-- **Text-to-Speech:** Coqui TTS / VITS
-- **Audio Recording:** Audacity
-- **Microphone:** RØDE NT1 (5th Gen)
-
----
-
-## Project Structure (Planned)
-nepali-voice-ai/
+Project Structure
+nepali-voice-ai-pilot/
 │
 ├── data/
-│ ├── audio/
-│ ├── transcripts/
+│   ├── audio/              # 151 raw WAV recordings (NP_001–NP_150)
+│   ├── audio_cleaned/      # Cleaned audio
+│   ├── audio_normalized/   # Normalized audio
+│   ├── transcripts/        # Nepali text transcripts
+│   ├── datasets/           # Processed datasets
+│   ├── metadata.csv        # Full metadata
+│   ├── metadata_curated.csv
+│   ├── metadata_all.csv
+│   └── metadata_v2.csv
 │
-├── models/
 ├── scripts/
-├── docs/
+│   └── Demo/
+│       ├── voice_loop_demo.py       # Phase 2 Gradio demo
+│       └── response_audio/          # 6 recorded voice responses
+│           ├── greeting_response.wav
+│           ├── morning_response.wav
+│           ├── thanks_response.wav
+│           ├── goodnight_response.wav
+│           ├── howru_response.wav
+│           └── default_response.wav
 │
+├── docs/
+│   ├── 00_PROJECT_RESET.md
+│   ├── 01_SETUP_GUIDE.md
+│   ├── 02_LEARNING_LOG.md
+│   ├── 03_FIRST_STT_TEST.md
+│   ├── PHASE1_FINAL_REPORT.md
+│   ├── PROJECT_DOCUMENTATION.md
+│   ├── TECHNICAL_REPORT_PHASE1.md
+│   └── TECHNICAL_SETUP_GUIDE.md
+│
+├── models/                 # Trained model checkpoints (future)
+└── README.md
 
-## Current Status
-**Pilot phase – active development**
 
-Work has started on:
-- Project planning
-- Dataset design
-- Tool research
+Technology Stack
+Component
+Tool
+Language
+Python 3.10
+Speech-to-Text
+OpenAI Whisper (small)
+Text-to-Speech
+Personal recorded voice + gTTS fallback
+Demo UI
+Gradio 6.x
+Microphone
+RØDE NT1 (5th Gen)
+Audio editing
+Audacity
 
----
 
-## Contribution
-This project is currently a **solo pilot initiative**.  
-Documentation and datasets may be shared openly in later phases.
+Roadmap
+Phase
+             Goal
+Status
+Phase 1
+Record dataset, STT baseline
+✅ Complete
+Phase 2
+Voice loop demo, recorded responses
+✅ Complete
+Phase 3
+Fine-tune Whisper on Nepali dataset
+🔜 Planned
+Phase 4
+Train Coqui/VITS TTS on personal voice
+🔜 Planned
+Phase 5
+Public demo, community contributions
+🔜 Planned
 
-Feedback and suggestions are welcome.
 
----
+Scope
+Included
+Single-speaker voice dataset
+STT using Whisper with Nepali phonetic matching
+Pre-recorded personal voice responses
+Simple local web demo
+Not Included (yet)
+Commercial deployment
+Mobile applications
+Multi-speaker or multi-accent support
+Real-time fine-tuned model inference
 
-## License
-License will be decided later.  
-Likely an open-source, research-friendly license.
+Contribution
+This is currently a solo pilot initiative. Documentation and datasets may be shared openly in later phases. Feedback and suggestions are welcome.
 
----
+License
+License to be decided. Likely an open-source, research-friendly license.
 
-*This repository documents an early-stage pilot project focused on learning, experimentation, and long-term community benefit.*
+Building Nepali voice AI — one phrase at a time. 🇳🇵
+
