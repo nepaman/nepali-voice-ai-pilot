@@ -45,53 +45,93 @@ for key, path in RESPONSE_AUDIO.items():
 
 def is_hallucination(text: str) -> bool:
     """
-    Whisper hallucinates when audio is too short/silent:
-    it repeats the same word or syllable dozens of times.
-    Detect by checking if any single word repeats more than 5 times.
+    Detect Whisper looping: same word repeated more than 5 times.
+    e.g. "अग्टाए अग्टाए अग्टाए..." or "तो तो तो तो..."
     """
     words = text.split()
     if len(words) < 4:
         return False
     for word in set(words):
         if words.count(word) > 5:
-            print(f"  ⚠️ Hallucination detected: '{word}' repeated {words.count(word)}x")
+            print(f"  ⚠️ Hallucination: '{word}' repeated {words.count(word)}x — rejected")
             return True
     return False
 
 
 # --------------------------------------------------
-# 3. Response logic — broad phonetic matching
+# 3. Response logic — real phonetic variants from YOUR logs
 # --------------------------------------------------
 
 def generate_smart_response(user_text: str):
     """
-    Whisper transcribes Nepali phonetically and inconsistently.
-    Match on multiple phonetic variants of each keyword.
+    Every variant below was actually seen in Whisper output from your test logs.
+    We match on what Whisper ACTUALLY produces, not what we expect it to produce.
     """
     t = user_text
 
-    # नमस्ते / नमस्कार — Whisper: नवास्ते, नवस्तें, नमस्
-    if any(k in t for k in ["नमस्ते", "नमस्कार", "नमस्", "नवास्", "नवस्"]):
+    # ── GREETING: नमस्ते / नमस्कार ──────────────────────────────────────
+    # Seen: नमस्ते ✓, नवास्ते, नवस्तें, नमस्
+    if any(k in t for k in [
+        "नमस्ते", "नमस्कार", "नमस्",
+        "नवास्ते", "नवस्ते", "नवस्तें", "नवास्"
+    ]):
         return "नमस्कार! तपाईंलाई भेटेर खुशी लाग्यो। म नेपाली भ्वाइस एआई हुँ।", "greeting"
 
-    # शुभ प्रभात — Whisper: सुब प्रबात, सूब प्रबात, सुबब्रबाद, सूबो प्रवाद
-    if any(k in t for k in ["प्रभात", "प्रबात", "प्रवाद", "प्रबाद", "बिहानी", "सुबब्र", "सूबो"]):
+    # ── GOOD MORNING: शुभ प्रभात ─────────────────────────────────────────
+    # Seen: सूबो प्रवाद, सूब प्रबात, सुबब्रबाद, शुबःप्रबाद
+    if any(k in t for k in [
+        "प्रभात", "प्रबात", "प्रवाद", "प्रबाद",
+        "बिहानी", "सुबब्र", "सूबो", "शुबः",
+        "सुप्र", "शुभप्र"
+    ]):
         return "शुभ प्रभात! आज तपाईंको दिन शुभ रहोस्।", "morning"
 
-    # धन्यवाद — Whisper: तन्ये बाद, तान्धे बाद (very different phonetically)
-    # Match on the "बाद" / "वाद" suffix + short word before it
-    if any(k in t for k in ["धन्यवाद", "धन्यबाद", "धन्य", "तन्ये", "तान्धे", "थान्क"]):
+    # ── THANK YOU: धन्यवाद ───────────────────────────────────────────────
+    # Seen: तन्ये बाद, तान्धे बाद, तभन्ने बाद
+    # Pattern: Whisper loses the "ध" and writes त instead
+    #          and converts "न्यवाद" → "न्ये बाद" / "न्धे बाद" / "भन्ने बाद"
+    # Match on: any "बाद" or "वाद" that follows a short word (2-4 chars)
+    if any(k in t for k in [
+        "धन्यवाद", "धन्यबाद", "धन्य",
+        "तन्ये", "तान्धे", "तभन्ने",
+        "थ्यान्क", "थान्क", "धन्"
+    ]):
         return "तपाईंलाई पनि धन्यवाद! सधैं खुशी छु सहयोग गर्न।", "thanks"
 
-    # शुभ रात्रि — Whisper: सुबरात्री (this already works!)
-    if any(k in t for k in ["रात्रि", "रात्री", "राति", "सुबरात", "रात्"]):
+    # Extra: catch "X बाद" pattern where X is 2-5 chars (धन्यवाद variants)
+    words = t.split()
+    for i, word in enumerate(words):
+        if word in ["बाद", "वाद"] and i > 0 and len(words[i-1]) <= 5:
+            print(f"  → Caught धन्यवाद via बाद/वाद pattern: '{t}'")
+            return "तपाईंलाई पनि धन्यवाद! सधैं खुशी छु सहयोग गर्न।", "thanks"
+
+    # ── GOOD NIGHT: शुभ रात्रि ───────────────────────────────────────────
+    # Seen: सुबरात्री ✓ (already working well)
+    if any(k in t for k in [
+        "रात्रि", "रात्री", "राति", "रात्",
+        "सुबरात", "शुभरात"
+    ]):
         return "शुभ रात्रि! राम्रोसँग सुत्नुहोस्।", "goodnight"
 
-    # कस्तो छ — Whisper: ख़ाँ तो था, ख़्ष्टो चा (hard to match phonetically)
-    # Use loose matching on the "स्तो" or "छ" pattern
-    if any(k in t for k in ["कस्तो", "कस्तै", "कस्", "ख़ाँ तो", "ख़्ष्टो"]):
-        return "म ठीक छु, धन्यवाद! तपाईं कस्तो हुनुहुन्छ?", "howru"
+    # ── HOW ARE YOU: कस्तो छ ─────────────────────────────────────────────
+    # Seen: ख़ाँ तो था, ख़्ष्टो चा, ख़ाँ तो चाँ
+    # Pattern: Whisper writes ख़ (kha with nukta) instead of क
+    #          "स्तो" → "ाँ तो" or "्ष्टो"
+    #          "छ" → "था" / "चा" / "चाँ"
+    if any(k in t for k in [
+        "कस्तो", "कस्तै", "कस्",
+        "ख़ाँ", "ख़्ष्", "ख़्ट",       # Whisper's ख़ variants
+        "काँ तो", "खाँ तो",            # space variants
+        "छ", "चा", "था"                 # "छ" endings — broad catch
+    ]):
+        # Avoid false positives on "छ" alone — needs context
+        if "कस्" in t or "ख़" in t or "काँ" in t or "खाँ" in t:
+            return "म ठीक छु, धन्यवाद! तपाईं कस्तो हुनुहुन्छ?", "howru"
+        # If just "छ" matched, check it's not part of another phrase
+        if "छ" in t and not any(k in t for k in ["प्रभात", "रात्र", "नमस्", "धन्"]):
+            return "म ठीक छु, धन्यवाद! तपाईं कस्तो हुनुहुन्छ?", "howru"
 
+    # ── DEFAULT ───────────────────────────────────────────────────────────
     return f"तपाईंले भन्नुभयो: {user_text}। म अझै सिक्दैछु!", "default"
 
 
@@ -109,9 +149,9 @@ def transcribe_and_respond(audio_path):
             language="ne",
             fp16=False,
             temperature=0.0,
-            no_speech_threshold=0.6,    # FIX: skip truly silent audio
-            compression_ratio_threshold=2.0,  # FIX: catch hallucination loops
-            condition_on_previous_text=False, # FIX: stops repetition snowballing
+            no_speech_threshold=0.6,
+            compression_ratio_threshold=2.0,
+            condition_on_previous_text=False,
         )
         user_text = result["text"].strip()
     except Exception as e:
@@ -120,9 +160,8 @@ def transcribe_and_respond(audio_path):
     if not user_text:
         return "⚠️ Could not understand. Please speak clearly.", "", None
 
-    # Reject hallucinations before matching
     if is_hallucination(user_text):
-        return "⚠️ Audio too short or unclear — please speak a full phrase.", "", None
+        return "⚠️ Audio unclear — please speak a full phrase slowly.", "", None
 
     print(f"Whisper heard: {user_text}")
 
