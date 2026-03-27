@@ -20,7 +20,7 @@ Nepali Voice AI is a solo, non-commercial pilot focused on improving Nepali lang
 
 ---
 
-## ✅ Current Status — Phase 2 Complete
+## Current Status — Phase 2 Complete
 
 ### Phase 1 — STT Baseline (Complete)
 - Recorded 151 single-speaker audio clips (NP_001–NP_150)
@@ -131,11 +131,11 @@ nepali-voice-ai-pilot/
 
 | Phase | Goal | Status |
 |-------|------|--------|
-| Phase 1 | Record dataset, STT baseline | ✅ Complete |
-| Phase 2 | Voice loop demo, recorded responses | ✅ Complete |
-| Phase 3 | Fine-tune Whisper on Nepali dataset | 🔜 Planned |
-| Phase 4 | Train Coqui/VITS TTS on personal voice | 🔜 Planned |
-| Phase 5 | Public demo, community contributions | 🔜 Planned |
+| Phase 1 | Record dataset, STT baseline | Complete |
+| Phase 2 | Voice loop demo, recorded responses | Complete |
+| Phase 3 | Fine-tune Whisper on Nepali dataset | Planned |
+| Phase 4 | Train Coqui/VITS TTS on personal voice | Planned |
+| Phase 5 | Public demo, community contributions | Planned |
 
 ---
 
