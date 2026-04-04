@@ -1,0 +1,15 @@
+{
+  "dataset_name": "nepali-voice-ai-pilot",
+  "language": "ne",
+  "description": "Single-speaker Nepali conversational speech dataset",
+  "total_samples": 151,
+  "train_samples": 120,
+  "test_samples": 31,
+  "sample_rate": 16000,
+  "audio_format": "wav",
+  "transcript_column": "transcription",
+  "splits": {
+    "train": "/Users/gyanendramaharjan/Documents/nepali-voice-ai-pilot/data/datasets/whisper_finetune/train/metadata.jsonl",
+    "test": "/Users/gyanendramaharjan/Documents/nepali-voice-ai-pilot/data/datasets/whisper_finetune/test/metadata.jsonl"
+  }
+}
