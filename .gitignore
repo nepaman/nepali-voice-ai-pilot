@@ -31,3 +31,7 @@ Thumbs.db
 *.log
 .DS_Store
 **/.DS_Store
+models/whisper-nepali/checkpoint-*/
+models/whisper-nepali/optimizer.pt
+models/whisper-nepali/*.pt
+models/whisper-nepali/*.safetensors
