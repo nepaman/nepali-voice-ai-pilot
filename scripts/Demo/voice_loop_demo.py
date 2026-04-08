@@ -1,13 +1,16 @@
 """
 Nepali Voice AI - voice_loop_demo.py (Gradio 6.x)
 Complete voice loop: Speak → Transcribe → Respond → Speak back
+Now using fine-tuned Whisper model (Phase 3)
 """
 
 import gradio as gr
-import whisper
+import torch
+import librosa
 from gtts import gTTS
 import os
 from pathlib import Path
+from transformers import WhisperForConditionalGeneration, WhisperProcessor
 
 # --------------------------------------------------
 # 1. Paths and models
@@ -16,10 +19,25 @@ from pathlib import Path
 SCRIPT_DIR   = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent.parent
 RESPONSE_DIR = SCRIPT_DIR / "response_audio"
+MODEL_DIR    = PROJECT_ROOT / "models" / "whisper-nepali"
 
-print("Loading Whisper model...")
-model = whisper.load_model("small")
-print("✓ Whisper 'small' loaded")
+DEVICE = "mps" if torch.backends.mps.is_available() else "cpu"
+
+# Load fine-tuned Whisper model
+print("Loading fine-tuned Whisper model...")
+if MODEL_DIR.exists():
+    ft_processor = WhisperProcessor.from_pretrained(str(MODEL_DIR))
+    ft_model     = WhisperForConditionalGeneration.from_pretrained(str(MODEL_DIR))
+    ft_model     = ft_model.to(DEVICE)
+    ft_model.eval()
+    USE_FINETUNED = True
+    print(f"✓ Fine-tuned Whisper loaded from {MODEL_DIR}")
+else:
+    import whisper
+    ft_model     = whisper.load_model("small")
+    ft_processor = None
+    USE_FINETUNED = False
+    print("⚠️  Fine-tuned model not found — using baseline whisper-small")
 
 print(f"→ Project root : {PROJECT_ROOT}")
 print(f"→ Response dir : {RESPONSE_DIR}")
@@ -44,10 +62,6 @@ for key, path in RESPONSE_AUDIO.items():
 # --------------------------------------------------
 
 def is_hallucination(text: str) -> bool:
-    """
-    Detect Whisper looping: same word repeated more than 5 times.
-    e.g. "अग्टाए अग्टाए अग्टाए..." or "तो तो तो तो..."
-    """
     words = text.split()
     if len(words) < 4:
         return False
@@ -59,84 +73,66 @@ def is_hallucination(text: str) -> bool:
 
 
 # --------------------------------------------------
-# 3. Response logic — real phonetic variants from YOUR logs
+# 3. Response logic
 # --------------------------------------------------
 
 def generate_smart_response(user_text: str):
-    """
-    Every variant below was actually seen in Whisper output from your test logs.
-    We match on what Whisper ACTUALLY produces, not what we expect it to produce.
-    """
     t = user_text
 
-    # ── GREETING: नमस्ते / नमस्कार ──────────────────────────────────────
-    # Seen: नमस्ते ✓, नवास्ते, नवस्तें, नमस्
-    if any(k in t for k in [
-        "नमस्ते", "नमस्कार", "नमस्",
-        "नवास्ते", "नवस्ते", "नवस्तें", "नवास्"
-    ]):
+    if any(k in t for k in ["नमस्ते", "नमस्कार", "नमस्", "नवास्ते", "नवस्ते", "आपस्कार"]):
         return "नमस्कार! तपाईंलाई भेटेर खुशी लाग्यो। म नेपाली भ्वाइस एआई हुँ।", "greeting"
 
-    # ── GOOD MORNING: शुभ प्रभात ─────────────────────────────────────────
-    # Seen: सूबो प्रवाद, सूब प्रबात, सुबब्रबाद, शुबःप्रबाद
-    if any(k in t for k in [
-        "प्रभात", "प्रबात", "प्रवाद", "प्रबाद",
-        "बिहानी", "सुबब्र", "सूबो", "शुबः",
-        "सुप्र", "शुभप्र"
-    ]):
+    if any(k in t for k in ["प्रभात", "प्रबात", "प्रवाद", "प्रबाद", "बिहानी", "सुबब्र", "सूबो"]):
         return "शुभ प्रभात! आज तपाईंको दिन शुभ रहोस्।", "morning"
 
-    # ── THANK YOU: धन्यवाद ───────────────────────────────────────────────
-    # Seen: तन्ये बाद, तान्धे बाद, तभन्ने बाद
-    # Pattern: Whisper loses the "ध" and writes त instead
-    #          and converts "न्यवाद" → "न्ये बाद" / "न्धे बाद" / "भन्ने बाद"
-    # Match on: any "बाद" or "वाद" that follows a short word (2-4 chars)
-    if any(k in t for k in [
-        "धन्यवाद", "धन्यबाद", "धन्य",
-        "तन्ये", "तान्धे", "तभन्ने",
-        "थ्यान्क", "थान्क", "धन्"
-    ]):
+    if any(k in t for k in ["धन्यवाद", "धन्यबाद", "धन्य", "तन्ये", "तान्धे", "तभन्ने"]):
         return "तपाईंलाई पनि धन्यवाद! सधैं खुशी छु सहयोग गर्न।", "thanks"
 
-    # Extra: catch "X बाद" pattern where X is 2-5 chars (धन्यवाद variants)
     words = t.split()
     for i, word in enumerate(words):
         if word in ["बाद", "वाद"] and i > 0 and len(words[i-1]) <= 5:
-            print(f"  → Caught धन्यवाद via बाद/वाद pattern: '{t}'")
             return "तपाईंलाई पनि धन्यवाद! सधैं खुशी छु सहयोग गर्न।", "thanks"
 
-    # ── GOOD NIGHT: शुभ रात्रि ───────────────────────────────────────────
-    # Seen: सुबरात्री ✓ (already working well)
-    if any(k in t for k in [
-        "रात्रि", "रात्री", "राति", "रात्",
-        "सुबरात", "शुभरात"
-    ]):
+    if any(k in t for k in ["रात्रि", "रात्री", "राति", "सुबरात", "शुभरात"]):
         return "शुभ रात्रि! राम्रोसँग सुत्नुहोस्।", "goodnight"
 
-    # ── HOW ARE YOU: कस्तो छ ─────────────────────────────────────────────
-    # Seen: ख़ाँ तो था, ख़्ष्टो चा, ख़ाँ तो चाँ
-    # Pattern: Whisper writes ख़ (kha with nukta) instead of क
-    #          "स्तो" → "ाँ तो" or "्ष्टो"
-    #          "छ" → "था" / "चा" / "चाँ"
-    if any(k in t for k in [
-        "कस्तो", "कस्तै", "कस्",
-        "ख़ाँ", "ख़्ष्", "ख़्ट",       # Whisper's ख़ variants
-        "काँ तो", "खाँ तो",            # space variants
-        "छ", "चा", "था"                 # "छ" endings — broad catch
-    ]):
-        # Avoid false positives on "छ" alone — needs context
-        if "कस्" in t or "ख़" in t or "काँ" in t or "खाँ" in t:
-            return "म ठीक छु, धन्यवाद! तपाईं कस्तो हुनुहुन्छ?", "howru"
-        # If just "छ" matched, check it's not part of another phrase
-        if "छ" in t and not any(k in t for k in ["प्रभात", "रात्र", "नमस्", "धन्"]):
+    if any(k in t for k in ["कस्तो", "कस्तै", "ख़ाँ", "ख़्ष्", "काँ तो"]):
+        if any(k in t for k in ["कस्", "ख़", "काँ", "खाँ"]):
             return "म ठीक छु, धन्यवाद! तपाईं कस्तो हुनुहुन्छ?", "howru"
 
-    # ── DEFAULT ───────────────────────────────────────────────────────────
     return f"तपाईंले भन्नुभयो: {user_text}। म अझै सिक्दैछु!", "default"
 
 
 # --------------------------------------------------
-# 4. Core function: STT → smart reply → play your voice
+# 4. Transcribe using fine-tuned model
+# --------------------------------------------------
+
+def transcribe_audio(audio_path: str) -> str:
+    if USE_FINETUNED:
+        audio_array, _ = librosa.load(audio_path, sr=16000)
+        inputs = ft_processor(
+            audio_array,
+            sampling_rate=16000,
+            return_tensors="pt"
+        ).input_features.to(DEVICE)
+        with torch.no_grad():
+            predicted_ids = ft_model.generate(inputs)
+        return ft_processor.batch_decode(
+            predicted_ids, skip_special_tokens=True
+        )[0].strip()
+    else:
+        result = ft_model.transcribe(
+            audio_path,
+            language="ne",
+            fp16=False,
+            temperature=0.0,
+            condition_on_previous_text=False,
+        )
+        return result["text"].strip()
+
+
+# --------------------------------------------------
+# 5. Core function: STT → smart reply → play your voice
 # --------------------------------------------------
 
 def transcribe_and_respond(audio_path):
@@ -144,16 +140,7 @@ def transcribe_and_respond(audio_path):
         return "⚠️ No audio received. Please record first.", "", None
 
     try:
-        result = model.transcribe(
-            audio_path,
-            language="ne",
-            fp16=False,
-            temperature=0.0,
-            no_speech_threshold=0.6,
-            compression_ratio_threshold=2.0,
-            condition_on_previous_text=False,
-        )
-        user_text = result["text"].strip()
+        user_text = transcribe_audio(audio_path)
     except Exception as e:
         return f"❌ Transcription error: {e}", "", None
 
@@ -186,17 +173,19 @@ def transcribe_and_respond(audio_path):
 
 
 # --------------------------------------------------
-# 5. Gradio UI
+# 6. Gradio UI
 # --------------------------------------------------
 
+model_label = "Fine-tuned Whisper" if USE_FINETUNED else "Baseline Whisper"
+
 with gr.Blocks(title="Nepali Voice AI Demo") as demo:
-    gr.Markdown("""
-    # 🇳🇵 Nepali Voice AI — Phase 2 Demo
+    gr.Markdown(f"""
+    # 🇳🇵 Nepali Voice AI — Phase 3 Demo
     **नेपाली भ्वाइस एआई - प्रदर्शन**
 
     Speak in Nepali → see transcript → hear response in your own voice!
 
-    **Try saying:** नमस्ते · शुभ प्रभात · धन्यवाद · शुभ रात्रि · कस्तो छ
+    **STT Model:** {model_label} · **Try saying:** नमस्ते · शुभ प्रभात · धन्यवाद · शुभ रात्रि · कस्तो छ
     """)
 
     with gr.Row():
@@ -240,12 +229,12 @@ with gr.Blocks(title="Nepali Voice AI Demo") as demo:
         outputs=process_outputs
     )
 
-    gr.Markdown("---\n**Phase 2 Demo** | Whisper STT + Your recorded voice | March 2026")
+    gr.Markdown("---\n**Phase 3 Demo** | Fine-tuned Whisper STT + Your recorded voice | April 2026")
 
 
 if __name__ == "__main__":
     print("\n" + "=" * 70)
-    print("Starting Nepali Voice AI — voice_loop_demo.py")
+    print("Starting Nepali Voice AI — Phase 3 Demo")
     print("Open: http://127.0.0.1:7860")
     print("=" * 70)
     demo.launch(
