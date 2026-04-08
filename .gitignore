@@ -36,3 +36,8 @@ models/whisper-nepali/optimizer.pt
 models/whisper-nepali/*.pt
 models/whisper-nepali/*.safetensors
 temp_response.mp3
+models/whisper-nepali/checkpoint-*/
+models/whisper-nepali/model.safetensors
+models/whisper-nepali/*.pt
+models/whisper-nepali/*.pth
+models/whisper-nepali/*.bin
