@@ -168,3 +168,5 @@ License to be decided. Likely an open-source, research-friendly license.
 ---
 
 *Building Nepali voice AI — one phrase at a time. 🇳🇵*
+## 🤗 Model on Hugging Face
+Fine-tuned Whisper model: https://huggingface.co/nepaman/whisper-nepali-tiny
