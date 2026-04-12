@@ -1,5 +1,4 @@
 filename,transcript,romanized
-NP_000.wav,यो नेपाली भ्वाइस एआई परियोजनाको परीक्षण रेकर्डिङ हो।,Yō nēpālī bhvā'isa ē'ā'ī pariyōjanākō parīkṣaṇa rēkarḍiṅa hō.
 NP_001.wav,नमस्कार,Namaskar
 NP_002.wav,नमस्ते,Namaste
 NP_003.wav,नमस्ते कस्तो छ?,Namaste Kasto Cha
@@ -150,3 +149,109 @@ NP_147.wav,दुःखी छु,dukkhi chhu
 NP_148.wav,जाने बेला भयो,jane bela bhayo
 NP_149.wav,फेरि भेटौँला,pheri bhetaunla
 NP_150.wav,शुभरात्रि,shubha raatri
+NP_151.wav,एक,ek
+NP_152.wav,दुई,dui
+NP_153.wav,तीन,teen
+NP_154.wav,चार,char
+NP_155.wav,पाँच,paanch
+NP_156.wav,छ,chha
+NP_157.wav,सात,saat
+NP_158.wav,आठ,aath
+NP_159.wav,नौ,nau
+NP_160.wav,दस,das
+NP_161.wav,बीस,bees
+NP_162.wav,तीस,tees
+NP_163.wav,चालीस,chaalis
+NP_164.wav,पचास,pachaas
+NP_165.wav,एक सय,ek saya
+NP_166.wav,दुई सय,dui saya
+NP_167.wav,एक हजार,ek hajar
+NP_168.wav,तपाईंलाई धन्यवाद,tapaailee dhanyabad
+NP_169.wav,माफ गर्नुहोस्,maaf garnuhos
+NP_170.wav,कृपया मद्दत गर्नुहोस्,kripaya maddat garnuhos
+NP_171.wav,म ठीक छु,ma thik chhu
+NP_172.wav,तपाईं कहाँ हुनुहुन्छ?,tapaaee kahaa hunuhunchha
+NP_173.wav,मेरो नाम ज्ञानेन्द्र हो,mero naam gyanendra ho
+NP_174.wav,म नेपाल बाट हुँ,ma nepal bata huu
+NP_175.wav,आज मौसम राम्रो छ,aaja mausam ramro chha
+NP_176.wav,खाना खानु भयो?,khaana khaanu bhayo
+NP_177.wav,पानी दिनुहोस्,paani dinuhos
+NP_178.wav,ढोका खोल्नुहोस्,dhoka kholnuhos
+NP_179.wav,ढोका बन्द गर्नुहोस्,dhoka banda garnuhos
+NP_180.wav,बिस्तारै बोल्नुहोस्,bistaarai bolnuhos
+NP_181.wav,फेरि भन्नुहोस्,pheri bhannuhos
+NP_182.wav,मलाई थाहा छैन,malai thaha chhaina
+NP_183.wav,हो,ho
+NP_184.wav,होइन,hoina
+NP_185.wav,हुन्छ,hunchha
+NP_186.wav,हुँदैन,hundaina
+NP_187.wav,अहिले कति बज्यो?,ahile kati bajyo
+NP_188.wav,बिहान,bihaan
+NP_189.wav,दिउँसो,diunso
+NP_190.wav,साँझ,saanjh
+NP_191.wav,रात,raat
+NP_192.wav,आज,aaja
+NP_193.wav,हिजो,hijo
+NP_194.wav,भोलि,bholi
+NP_195.wav,सोमबार,sombaar
+NP_196.wav,मंगलबार,mangalbaar
+NP_197.wav,बुधबार,budhabaar
+NP_198.wav,बिहीबार,bihibaar
+NP_199.wav,शुक्रबार,shukrabaar
+NP_200.wav,शनिबार,shanibaar
+NP_201.wav,आइतबार,aaitabaar
+NP_202.wav,सुन्नुहोस्,sunnuhos
+NP_203.wav,रोक्नुहोस्,roknuhos
+NP_204.wav,सुरु गर्नुहोस्,suru garnuhos
+NP_205.wav,बन्द गर्नुहोस्,banda garnuhos
+NP_206.wav,मद्दत चाहियो,maddat chaahiyo
+NP_207.wav,नेपाली बोल्नुहोस्,nepali bolnuhos
+NP_208.wav,अंग्रेजी बोल्नुहोस्,angreji bolnuhos
+NP_209.wav,अनुवाद गर्नुहोस्,anubad garnuhos
+NP_210.wav,खोज्नुहोस्,khojnuhos
+NP_211.wav,पठाउनुहोस्,pathaaunuhos
+NP_212.wav,आमा,aama
+NP_213.wav,बुवा,buwa
+NP_214.wav,दाइ,daai
+NP_215.wav,दिदी,didi
+NP_216.wav,भाइ,bhai
+NP_217.wav,बहिनी,bahini
+NP_218.wav,साथी,saathi
+NP_219.wav,शिक्षक,shikshak
+NP_220.wav,काठमाडौं,kathmadau
+NP_221.wav,पोखरा,pokhara
+NP_222.wav,लुम्बिनी,lumbini
+NP_223.wav,हिमालय,himalaya
+NP_224.wav,नेपाल,nepal
+NP_225.wav,भारत,bharat
+NP_226.wav,घर,ghar
+NP_227.wav,विद्यालय,bidyalay
+NP_228.wav,अस्पताल,aspatal
+NP_229.wav,बजार,bajar
+NP_230.wav,सडक,sadak
+NP_231.wav,नदी,nadi
+NP_232.wav,दाल भात,daal bhat
+NP_233.wav,रोटी,roti
+NP_234.wav,चिया,chiya
+NP_235.wav,पानी,paani
+NP_236.wav,दूध,dudh
+NP_237.wav,फल,phal
+NP_238.wav,तरकारी,tarkari
+NP_239.wav,म नेपाली भाषा सिक्दै छु,ma nepali bhasha sikdai chhu
+NP_240.wav,यो कम्प्युटर राम्रो काम गर्छ,yo computer ramro kaam garchha
+NP_241.wav,मलाई नेपाली संगीत मन पर्छ,malai nepali sangit man parchha
+NP_242.wav,हिमालय संसारको सबैभन्दा अग्लो पर्वत हो,himalaya sansarko sabaibhanda aglo parbat ho
+NP_243.wav,नेपालको राजधानी काठमाडौं हो,nepalko rajdhani kathmadau ho
+NP_244.wav,म हरेक दिन व्यायाम गर्छु,ma harek din byayam garchhu
+NP_245.wav,आजको समाचार के छ?,aajako samachar ke chha
+NP_246.wav,मेरो फोन कहाँ छ?,mero phone kahaa chha
+NP_247.wav,कृपया ढिलो बोल्नुहोस्,kripaya dhilo bolnuhos
+NP_248.wav,तपाईंको नाम के हो?,tapaaeko naam ke ho
+NP_249.wav,मलाई नेपाल मन पर्छ,malai nepal man parchha
+NP_250.wav,नेपाली खाना स्वादिलो हुन्छ,nepali khaana swadilo hunchha
+NP_251.wav,आज धेरै काम छ,aaja dherai kaam chha
+NP_252.wav,भोलि भेटौंला,bholi bhetaunla
+NP_253.wav,यो परियोजना धेरै राम्रो छ,yo pariyojana dherai ramro chha
+NP_254.wav,आवाज राम्रोसँग रेकर्ड भयो,aawaj ramrosanga record bhayo
+NP_255.wav,कृपया फेरि प्रयास गर्नुहोस्,kripaya pheri prayas garnuhos
+NP_256.wav,सफलताको लागि शुभकामना,saphalataako laagi shubhakamana
