@@ -41,3 +41,7 @@ models/whisper-nepali/model.safetensors
 models/whisper-nepali/*.pt
 models/whisper-nepali/*.pth
 models/whisper-nepali/*.bin
+.env
+.gradio/
+test_*.wav
+test_*.mp3
