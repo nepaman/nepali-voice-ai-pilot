@@ -220,7 +220,7 @@ trainer = Seq2SeqTrainer(
     eval_dataset=test_dataset,
     data_collator=data_collator,
     compute_metrics=compute_metrics,
-    processing_class=processor.feature_extractor,
+    tokenizer=processor.feature_extractor,
 )
 
 print("=" * 60)
