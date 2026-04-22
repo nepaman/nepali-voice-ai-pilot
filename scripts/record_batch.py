@@ -548,6 +548,40 @@ EXTRA_SENTENCES_2 = [
     ("कलाकार", "kalaakaar"),
     ("गायक", "gaayak"),
     ("नर्तक", "nartaka"),
+
+    # New sentences to reach 30 minutes
+    ("मेरो आवाज सुन्नुहोस्", "mero aawaj sunnuhos"),
+    ("नेपाली आवाज राम्रो छ", "nepali aawaj ramro chha"),
+    ("म हरेक दिन नेपाली बोल्छु", "ma harek din nepali bolchu"),
+    ("नेपाली भाषा सिक्नु जरुरी छ", "nepali bhaasha siknu jaruri chha"),
+    ("मेरो परिवार काठमाडौंमा छ", "mero parivaar kathmadauma chha"),
+    ("हाम्रो संस्कृति जोगाउनुपर्छ", "haamro sanskriti jogaunuparchha"),
+    ("नेपाली गीत गाउन मन लाग्छ", "nepali geet gaauna man laagchha"),
+    ("हिमालयको दृश्य अद्भुत छ", "himalayko drishya adbhut chha"),
+    ("नेपालमा पर्यटन राम्रो छ", "nepalma paryatan ramro chha"),
+    ("काठमाडौं उपत्यका सुन्दर छ", "kathmandu upatyaka sundar chha"),
+    ("नेपाली मान्छे मिलनसार हुन्छन्", "nepali maanche milanasaar hunchhan"),
+    ("हाम्रो देशमा विविधता छ", "haamro deshma biwibhidhataa chha"),
+    ("पहाड र तराई दुवै सुन्दर छन्", "pahaad ra tarai duwai sundar chhan"),
+    ("नेपालको इतिहास गौरवशाली छ", "nepalko itihaas gaurawashaali chha"),
+    ("भविष्यमा नेपाल अझ राम्रो हुन्छ", "bhabisyama nepal ajha ramro huncha"),
+    ("म नेपालमा गर्व गर्छु", "ma nepalma garwa garchhu"),
+    ("नेपाली युवा देशको भविष्य हो", "nepali yuwa deshko bhabisya ho"),
+    ("मिलेर नेपाल बनाउँछौं", "milera nepal banaunchhaun"),
+    ("जय नेपाल जय नेपाली", "jaya nepal jaya nepali"),
+    ("नेपाल सधैं अमर रहोस्", "nepal sadhai amar rahos"),
+
+    # Love and emotions
+    ("म तिमीलाई माया गर्छु", "ma timilai maaya garchhu"),
+    ("तिमी मेरो मुटुमा छौ", "timi mero mutuma chhau"),
+    ("तिमीबिना जीवन अधुरो छ", "timibina jiwan adhuro chha"),
+    ("तिमीसँग बिताएका पल सुनौला छन्", "timi sanga bitaaeka pal sunaulaa chhan"),
+    ("मेरो माया सधैं तिम्रो लागि छ", "mero maaya sadhai timro laagi chha"),
+    ("तिमी मेरो जीवनको खुशी हौ", "timi mero jiiwanko khushi hau"),
+    ("तिमीलाई देख्दा मन खुश हुन्छ", "timilai dekhda man khush huncha"),
+    ("साथ भए सबै सम्भव छ", "saath bhaye sabai sambhav chha"),
+    ("माया नै जीवन हो", "maaya nai jiwan ho"),
+    ("तिम्रो मुस्कान सुन्दर छ", "timro muskaan sundar chha"),
 ]
 
 def get_next_filename():
