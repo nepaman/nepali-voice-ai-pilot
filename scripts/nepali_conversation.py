@@ -164,11 +164,11 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Nepali Voice AI") as demo:
             voice_out_text  = gr.Textbox(label="What you said / Tapain bhannu bhayo", interactive=False)
             voice_out_audio = gr.Audio(label="AI Response — Press Play to hear", autoplay=False)
 
-        with gr.Tab("Type Nepali / Lekhnus"):
+        with gr.Tab("नेपालीमा लेख्नुहोस्"):
             gr.Markdown("Type any Nepali sentence below and press Enter or click Submit.")
             text_input = gr.Textbox(
-                placeholder="Type Nepali here...",
-                label="Type Nepali / Nepali ma lekhnus",
+                placeholder="यहाँ नेपालीमा लेख्नुहोस्...",
+                label="नेपालीमा लेख्नुहोस्",
                 lines=2
             )
             text_btn = gr.Button("Submit", variant="primary", size="lg")
